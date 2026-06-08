@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercicio 01 - javascript  </title>
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites,web, frontend">
+    <meta name="author" content="mikael fernandes, fernandesmikael987@gmail.com">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.jpg" type="image/jpeg">
+    
+</head>
+<body>
+
+    <h1>Resultado da Operação</h1>
+    <p id="resultado"></p>
+
+    <script>
+        let num1 = Number(prompt("Digite o primeiro número:"));
+        let num2 = Number(prompt("Digite o segundo número:"));
+
+        let operacao = prompt("Digite '+' para somar ou '-' para subtrair:");
+
+        let resultado;
+
+        if (operacao === "+") {
+            resultado = num1 + num2;
+            document.getElementById("resultado").innerHTML =
+                `${num1} + ${num2} = ${resultado}`;
+        } 
+        else if (operacao === "-") {
+            resultado = num1 - num2;
+            document.getElementById("resultado").innerHTML =
+                `${num1} - ${num2} = ${resultado}`;
+        } 
+        else {
+            document.getElementById("resultado").innerHTML =
+                "Operação inválida!";
+        }
+    </script>
+
+</body>
+</html>

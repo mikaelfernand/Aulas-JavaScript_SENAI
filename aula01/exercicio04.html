@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercicio 01 - javascript  </title>
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites,web, frontend">
+    <meta name="author" content="mikael fernandes, fernandesmikael987@gmail.com">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.jpg" type="image/jpeg">
+
+</head>
+
+<body>
+    <h1> Integrando os recursoso de interação  </h1>
+    <hr>
+    <script> 
+
+        window.alert(" seja bem-vindo ao site");
+        let nome = window.prompt("QUAL È SEU NOME? ");
+        window.alert(nome);
+        console.log(nome);
+        let resposta = window.confirm("Voce deseja sair da pagina? ");
+
+        if(resposta==true){
+            setTimeout(() => {
+                window.open("Index.html");
+            }, 3000);
+
+        }else{
+            window.confirm(nome +", Voce vai continuar nessas pagina! ");
+        }
+    </script>
+</body>
+
+</html>
