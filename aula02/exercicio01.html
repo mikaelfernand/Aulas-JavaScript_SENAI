@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio01 - JAVASCRIPT </title>
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites,web, frontend">
+    <meta name="author" content="mikael fernandes, fernandesmikael987@gmail.com">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.jpg" type="image/jpeg">
+
+</head>
+<body>
+    <h1> MANIPULANDO ELEMENTOS (TAGS)<mark> DO HTML ATRÁVES DO JS</mark></h1>
+    <hr>
+
+    <div>
+        <p> Estamos aprendendo</p>
+        <hr>
+        <p>Aprender é muito legal</p>
+        <p>e para ajudar o aprendizado, é PRECISO praticar e exercitar</p>
+    </div>
+
+    <script>
+
+        const tags_p = document.getElementsByTagName('p');
+        console.log("MINHAS TAGS <p>", tags_p)
+        let tags_p_1 = tags_p[0]
+        let tags_p_2 = tags_p[1]
+
+        tags_p_1.style.backgroundColor="green";
+        tags_p_1.style.color="yellow";
+        tags_p_1.style.textAlign="center";
+        tags_p_2.style.textAlign="center";
+
+    </script>
+    
+</body>
+</html>
