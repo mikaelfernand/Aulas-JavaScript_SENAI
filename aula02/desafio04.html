@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>desafio01 - JAVASCRIPT </title>
-    <meta name="description" content="...">
-    <meta name="keywords" content="sites,web, frontend">
-    <meta name="author" content="mikael fernandes, fernandesmikael987@gmail.com">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.jpg" type="image/jpeg">
-
+    <link rel="icon" type="image/jpg" href="img/trico1.jpg">
+    <title>Desafio 4 - Troca de imagem</title>
 </head>
+<body>
+    <h1><mark>DESAFIO 4</mark> ALTERANDO IMAGEM VIA JS</h1>
+    <hr>
+    <div>
+        <img id="imagemPrincipal" src="img/trico1.jpg" alt="Imagem do Desafio" width="300" title="Trico1">
+        <button onclick="trocarImagem()">Trocar Imagem</button>
+    </div>
+    <hr>
 
-    <body>
+    <script>
+        const imagem = document.getElementById('imagemPrincipal');
 
-        <h1> MANIPULANDO ELEMENTOS (TAGS)<mark> DO HTML ATRÁVES DO JS</mark></h1>
+        function trocarImagem() {
 
-        <hr>
-
-            <div>
-
-            </div>
-
-            <script>
-
-            </script>
-    </body>
-
+            if (imagem.title=="Trico1") {
+                imagem.title="Trico2";
+                imagem.src = 'img/trico2.jpg';                
+            } else {
+                imagem.src = 'img/trico1.jpg';
+                imagem.title="Trico1";
+            }
+        }
+    </script>
 </body>
 </html>
