@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio01 - JAVASCRIPT </title>
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites,web, frontend">
+    <meta name="author" content="mikael fernandes, fernandesmikael987@gmail.com">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.jpg" type="image/jpeg">
+
+</head>
+<body>
+    
+    <h1> MANIPULANDO ELEMENTOS (TAGS)<mark> DO HTML ATRÁVES DO JS</mark></h1>
+    <hr>
+
+        <div>
+            <img id="imagemPrincipal" src="img/chocado.jpg" alt="Imagem do Desafio" width="300" title="chocado">
+            <button onclick="trocarImagem()">Trocar Imagem</button>
+        </div>
+    <hr>
+    
+
+
+    <script>
+        const imagem = document.getElementById('imagemPrincipal');
+
+        function trocarImagem() {
+
+            if (imagem.title=="chocado") {
+                imagem.title="louco";
+                imagem.src = 'img/chocado.jpg';                
+            } else {
+                imagem.src = 'img/louco.jpg';
+                imagem.title="chocado";
+            }
+        }
+    </script>
+    
+</body>
+</html>
