@@ -1,0 +1,47 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="img/favicon.jpg">
+    <title>DESAFIO 03</title>
+    <meta name="descripition" content="...">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Mikael">
+</head>
+<body>
+    <script>
+        let numero1 = window.prompt("Digite o 1 número: ");
+        let numero2 = window.prompt("Digite o 2 número: ");
+        let operacao = window.prompt("Qual operação: (+) soma | (-) subtração | (*) multiplicação | (/) divisão");
+        let resultado = 0;
+
+        numero1 = parseInt(numero1);
+        numero2 = parseInt(numero2);
+
+        if (operacao == "+") {
+            resultado = numero1 + numero2;
+            alert("Resultado: " + resultado);
+        }
+        else if (operacao == "-") {
+            resultado = numero1 - numero2;
+            alert("Resultado: " + resultado);
+        }
+        else if (operacao == "*") {
+            resultado = numero1 * numero2;
+            alert("Resultado: " + resultado);
+        }
+        else if (operacao == "/") {
+            if (numero2 == 0) {
+                alert("NÃO É POSSÍVEL DIVISÃO POR ZERO!");
+            } else {
+                resultado = numero1 / numero2;
+                alert("Resultado: " + resultado);
+            }
+        }
+        else {
+            alert("Operação inválida!");
+        }
+    </script>
+</body>
+</html>

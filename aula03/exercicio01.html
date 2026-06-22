@@ -19,7 +19,10 @@
 
         <div>
             <img id="imagemPrincipal" src="img/chocado.jpg" alt="Imagem do Desafio" width="300" title="chocado">
-            <button onclick="trocarImagem()">Trocar Imagem</button>
+            <br>
+            <hr>
+            <button onclick="trocarImagem1()">Chocado</button>
+            <button onclick="trocarImagem2()">Louco</button>
         </div>
     <hr>
     
@@ -28,16 +31,16 @@
     <script>
         const imagem = document.getElementById('imagemPrincipal');
 
-        function trocarImagem() {
-
-            if (imagem.title=="chocado") {
-                imagem.title="louco";
-                imagem.src = 'img/chocado.jpg';                
-            } else {
-                imagem.src = 'img/louco.jpg';
-                imagem.title="chocado";
-            }
+        function trocarImagem1() {
+            imagem.title="Chococado";
+            imagem.src = 'img/chocado.jpg';                            
         }
+        function trocarImagem2() {
+
+            imagem.src = 'img/louco.jpg';
+            imagem.title="Louco";
+            
+        }        
     </script>
     
 </body>

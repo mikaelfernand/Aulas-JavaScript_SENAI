@@ -19,9 +19,28 @@
     <h2> id="operacao"</h2>
     <h2> id="resultado"</h2>
 
-    <script>
-  
-    </script>
+     <script>
+            let num1 = parseInt(window.prompt("Digite o primeiro número:"));
+
+            let num2 = parseInt(window.prompt("Digite o segundo número:"));
+
+            let operacao = window.prompt("Digite a operação desejada:\n+ para SOMA\n- para SUBTRAÇÃO");
+
+            let resultado;
+
+            if (operacao === "+") {
+                  resultado = num1 + num2;
+             } else if (operacao === "-") {
+                 resultado = num1 - num2;
+             } else {
+                  resultado = "Operação inválida!";
+             }
+
+                document.getElementById("num1").textContent = "Número 1: " + num1;
+                document.getElementById("num2").textContent = "Número 2: " + num2;
+                document.getElementById("operacao").textContent = "Operação: " + operacao;
+                document.getElementById("resultado").textContent = "Resultado: " + resultado;
+        </script>
 
 </body>
 </html>

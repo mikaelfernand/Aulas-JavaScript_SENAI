@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="ddot.jpg">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Exercício 01</title>
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content=" mikael ozório, fernandesmikael987@gmail.com">
+</head>
+<body>
+    <h1> TROCAR AS IMAGENS </h1>
+    <hr> 
+    <input type="button" onclick="bravo()" value="chocado">
+    <input type="button" onclick="triste()" value="louco">
+    <img src="angry.jpg.png" id="rosto" style="width: 350px;">
+
+    <script>
+        function chocado(){
+            const tag_img = document.getElementById('rosto');
+            tag_img.src = "chocado.jpg.jpg";
+            tag_img.title = "chocado";
+        }
+        function louco(){
+            const tag_img = document.getElementById('rosto');
+            tag_img.src = "louco.jpg.png";
+            tag_img.title = "louco";
+        }
+    </script>
+</body>
+</html>
